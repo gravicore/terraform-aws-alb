@@ -4,26 +4,19 @@
 
 variable "name" {
   type        = string
-  default     = "vnet"
   description = "The name of the module"
 }
 
 variable "terraform_module" {
   type        = string
-  default     = "gravicore/terraform-gravicore-modules/azure/vnet"
+  default     = "gravicore/terraform-aws-alb"
   description = "The owner and name of the Terraform module"
 }
 
 variable "region" {
   type        = string
   default     = ""
-  description = "The Azure region to deploy module into"
-}
-
-variable "resource_group_name" {
-  type        = string
-  default     = ""
-  description = "The name of the Azure resource group"
+  description = "The AWS region to deploy module into"
 }
 
 variable "create" {
