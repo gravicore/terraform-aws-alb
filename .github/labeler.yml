@@ -1,0 +1,6 @@
+github/action:
+  - .github/**/*
+aws:
+  - **
+alb:
+  - **
